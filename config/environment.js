@@ -2,6 +2,11 @@
 
 module.exports = function(environment) {
   var ENV = {
+    moment: {
+      // This will output _all_ locale scripts to assets/moment-locales
+      // this option does not respect includeLocales
+      localeOutputPath: 'assets/moment-locales'
+    },
     modulePrefix: 'dynamic-moment-locale-loading',
     environment: environment,
     rootURL: '/',
